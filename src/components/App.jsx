@@ -18,9 +18,9 @@ export class App extends Component {
     const friends = JSON.parse(localStorage.getItem(LOKAL_KEY));
 
     if (friends) {
-      this.setState(prev => ({
+      this.setState({
         contacts: friends,
-      }));
+      });
     }
   }
 
